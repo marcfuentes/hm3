@@ -1,6 +1,9 @@
 Hm3::Application.routes.draw do
+  resources :professionals
+
+
   authenticated :user do
-    root :to => 'home#index'
+    root :to => 'professionals#index'
   end
   root :to => "home#index"
   devise_for :users

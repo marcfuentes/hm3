@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @professional.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @professional.address %>
+</p>
+
+<p>
+  <b>Clinic:</b>
+  <%= @professional.clinic %>
+</p>
+
+<p>
+  <b>Information:</b>
+  <%= @professional.information %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= image_tag(@professional.picture_url, :width => "30%") if @professional.picture.present? %>
+</p>
+
+<p>
+  <b>Experience:</b>
+  <%= @professional.experience %>
+</p>
+
+<p>
+  <b>Final price:</b>
+  <%= @professional.final_price %>
+</p>
+
+<p>
+  <b>Market price:</b>
+  <%= @professional.market_price %>
+</p>
+
+<p>
+  <b>Saving price:</b>
+  <%= @professional.saving_price %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @professional.longitude %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @professional.latitude %>
+</p>
+
+<p>
+  <b>Gmaps:</b>
+  <%= @professional.gmaps %>
+</p>
+
+
+<%= link_to 'Edit', edit_professional_path(@professional) %> |
+<%= link_to 'Back', professionals_path %>

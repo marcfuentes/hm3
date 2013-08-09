@@ -4,11 +4,11 @@ gem 'rails', '3.2.13'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'carrierwave'
+  gem 'mini_magick'
 end
 group :production do
   gem 'pg'
-end
-group :production do
   gem 'thin'
 end
 group :assets do
@@ -23,6 +23,7 @@ gem 'devise'
 gem 'figaro'
 gem 'rolify'
 gem 'simple_form'
+gem 'gmaps4rails'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
