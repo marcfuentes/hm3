@@ -1,3 +1,4 @@
+
 <%= simple_form_for(@professional) do |f| %>
   <%= f.error_notification %>
 
@@ -8,9 +9,9 @@
     <%= f.input :information %>
     <%= f.input :picture %>
     <%= f.input :experience %>
-    <%= f.input :final_price %>
     <%= f.input :market_price %>
     <%= f.input :saving_price %>
+    <%= f.input :final_price %>
     <%= f.input :longitude %>
     <%= f.input :latitude %>
     <%= f.input :gmaps %>
@@ -20,3 +21,4 @@
     <%= f.button :submit %>
   </div>
 <% end %>
+
