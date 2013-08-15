@@ -1,40 +1,19 @@
-<h1>Listing professionals</h1>
+
 <%= gmaps4rails(@json) %>
 
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Address</th>
-    <th>Clinic</th>
-    <th>Information</th>
-    <th>Picture</th>
-    <th>Experience</th>
-    <th>Final price</th>
-    <th>Market price</th>
-    <th>Saving price</th>
-    <th>Longitude</th>
-    <th>Latitude</th>
-    <th>Gmaps</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+
 
 <% @professionals.each do |professional| %>
   <tr>
+    <td><%= image_tag professional.picture_url(:thumb) if professional.picture? %></td>
     <td><%= professional.name %></td>
     <td><%= professional.address %></td>
     <td><%= professional.clinic %></td>
-    <td><%= professional.information %></td>
-    <td><%= image_tag professional.picture_url(:thumb) if professional.picture? %></td>
     <td><%= professional.experience %></td>
     <td><%= professional.final_price %></td>
     <td><%= professional.market_price %></td>
     <td><%= professional.saving_price %></td>
-    <td><%= professional.longitude %></td>
-    <td><%= professional.latitude %></td>
-    <td><%= professional.gmaps %></td>
     <td><%= link_to 'Show', professional %></td>
     <td><%= link_to 'Edit', edit_professional_path(professional) %></td>
     <td><%= link_to 'Destroy', professional, method: :delete, data: { confirm: 'Are you sure?' } %></td>
