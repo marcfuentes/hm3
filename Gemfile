@@ -30,6 +30,7 @@ gem 'figaro'
 gem 'rolify'
 gem 'simple_form'
 gem 'gmaps4rails'
+gem 'high_voltage'
 
 group :development do
   gem 'better_errors'
