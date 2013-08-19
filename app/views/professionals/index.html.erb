@@ -3,23 +3,28 @@
 
 <section id='professional' >
     <% @professionals.each do |professional| %>
+    <div class="well well large">
       <article class='row-fluid'>
-        <div class="pro_thumb span6">
+          <div class="pro_thumb span4 offset2">
             <%= image_tag professional.picture_url(:thumb) if professional.picture? %>
-        </div>
-        <div class="info_pro span6">
-            <h2><%= professional.name %></h2>
+          </div>
+          <div class="info_pro span6">
+            <h3><%= link_to professional.name, professional %></h3>
             <ul>
                 <li> <strong>Dirección: </strong> <%= professional.address %></li>
                 <li> <strong>Clinica: </strong> <%= professional.clinic %></li>
                 <li> <strong>Años de experiencia: </strong> <%= professional.experience %></li>
-                <li><%= link_to 'Show', professional %></li>
-                <li><%= link_to 'Edit', edit_professional_path(professional) %></li>
-                <li><%= link_to 'Destroy', professional, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-                <li><%= link_to 'New Professional', new_professional_path %></li>
-        </div>
+                <%= link_to 'Show', professional %>
+                <%= link_to 'Edit', edit_professional_path(professional) %>
+                <%= link_to 'Destroy', professional, method: :delete, data: { confirm: 'Are you sure?' } %>
+                
+          </div>
+         </div> 
+
       </article>
+
     <%end%>
+    <%= link_to 'New Professional', new_professional_path, class: "btn btn-inverse" %>
 </section>
         
 

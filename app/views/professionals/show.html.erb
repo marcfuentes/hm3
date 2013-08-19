@@ -3,10 +3,10 @@
     <div class="span9 offset2">
       <div class="well well large">
 
-<p>
+
   
   <%= image_tag(@professional.picture_url, :width => "15%") if @professional.picture.present? %>
-</p>
+
 
 
 <h3>
@@ -55,10 +55,8 @@
 
 
 
-
-<%= link_to 'Edit', edit_professional_path(@professional) %> |
-<%= link_to 'Back', professionals_path %>
-
+<%= link_to 'Back', professionals_path, class: "btn btn-small btn-inverse" %> 
+<%= link_to 'Edit', edit_professional_path(@professional), class: "btn btn-small btn-inverse" %> 
      </div>
     </div>
   </div>

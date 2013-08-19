@@ -1,24 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="span6 offset3">
+       <div class="well well large">
+         <%= simple_form_for(@professional) do |f| %>
+         <%= f.error_notification %>
 
-<%= simple_form_for(@professional) do |f| %>
-  <%= f.error_notification %>
+           <div class="form-inputs">
+             <%= f.input :name %>
+             <%= f.input :address %>
+             <%= f.input :clinic %>
+             <%= f.input :information %>
+             <%= f.input :picture %>
+             <%= f.input :experience %>
+             <%= f.input :market_price %>
+             <%= f.input :saving_price %>
+             <%= f.input :final_price %>
+             <%= f.input :longitude %>
+             <%= f.input :latitude %>
+             <%= f.input :gmaps %>
+           </div>
 
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :address %>
-    <%= f.input :clinic %>
-    <%= f.input :information %>
-    <%= f.input :picture %>
-    <%= f.input :experience %>
-    <%= f.input :market_price %>
-    <%= f.input :saving_price %>
-    <%= f.input :final_price %>
-    <%= f.input :longitude %>
-    <%= f.input :latitude %>
-    <%= f.input :gmaps %>
+          <div class="form-actions">
+           <%= f.button :submit %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
-
+</div>  
