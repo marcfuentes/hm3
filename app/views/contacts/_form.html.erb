@@ -1,0 +1,17 @@
+<%= simple_form_for :contact_form, url: messages_path, method: :post do |f| %>
+ <%= f.error_notification %>
+
+ 
+    <%= f.input :name: 'Nombre' %>
+    <%= f.input :email, label: 'Email' %>
+    <%= f.input :message_title, label: 'Titulo' %>
+    <%= f.input :message_body, label: 'Tu Mensaje', as: :text %>
+  
+
+  
+    <%= f.button :submit  %>
+
+  
+<% end %>
+
+ 

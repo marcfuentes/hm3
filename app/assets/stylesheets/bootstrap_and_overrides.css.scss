@@ -30,7 +30,8 @@ html {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 40px;
+  padding-bottom: 0px;
 }
 
 section {
@@ -85,11 +86,12 @@ footer {
 
   width: 1190px;
   margin-top: 45px;
-  
   padding-top: 45px;
+  padding-bottom: 20px;
   border-top: 60px solid #eaeaea;
   color: #333;
   background-color:  #77aadd !important;
+  margin-bottom: 0px;
 
 }
 
@@ -114,3 +116,7 @@ footer ul li {
   float: left;
   margin-left: 100px;
 }
+  
+
+
+

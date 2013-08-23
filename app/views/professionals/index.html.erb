@@ -1,12 +1,13 @@
 
 <%= gmaps4rails(@json) %>
 
+
 <section id='professional' >
     <% @professionals.each do |professional| %>
     <div class="well well large">
       <article class='row-fluid'>
           <div class="pro_thumb span4 offset2">
-            <%= image_tag professional.picture_url(:thumb) if professional.picture? %>
+            <%= image_tag professional.picture_url(:thumb) if professional.picture?%>
           </div>
           <div class="info_pro span6">
             <h3><%= link_to professional.name, professional %></h3>

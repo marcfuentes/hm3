@@ -1,0 +1,12 @@
+<%= simple_form_for :contact_form, url: messages_path, method: :post do |f| %>
+ <%= f.error_notification %>
+
+  
+    <%= f.input :name %>
+    <%= f.input :email, label: 'Email address' %>
+    <%= f.input :message_title, label: 'Title' %>
+    <%= f.input :message_body, label: 'Your message', as: :text , input_html:{ rows: "6" } %>
+
+  
+    <%= f.submit 'Submit', class: 'btn-large btn-info'  %>
+    <% end %>

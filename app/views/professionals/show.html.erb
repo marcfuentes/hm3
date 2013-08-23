@@ -2,62 +2,60 @@
   <div class="row">
     <div class="span9 offset2">
       <div class="well well large">
+        <%= image_tag(@professional.picture_url, :width => "15%") if @professional.picture.present? %>
+          
+         <h3><%= @professional.name %></h3>
+         <h4><%= @professional.clinic %></h4>
+
+         <p>
+           <b>Lugar de la atención:</b>
+           <%= @professional.address %>
+        </p>
+         <p>
+          <b>Descripción:</b>
+            <%= @professional.information %>
+          </p>
+
+          <p>
+            <b>Años de Experiencia:</b>
+            <%= @professional.experience %>
+          </p>
+
+          <p>
+            <b>Precio de Mercado:</b>
+            <%= @professional.market_price %>
+          </p>
+
+          <p>
+            <b>Ahorro:</b>
+            <%= @professional.saving_price %>
+          </p>
+
+          <h3>
+            <b>Precio Final:</b>
+            <%= @professional.final_price %>
+          </h3>
 
 
-  
-  <%= image_tag(@professional.picture_url, :width => "15%") if @professional.picture.present? %>
-
-
-
-<h3>
-  <%= @professional.name %>
-</h3>
-
-<h4>
-  <%= @professional.clinic %>
-</h4>
-
-<p>
-  <b>Lugar de la atención:</b>
-  <%= @professional.address %>
-</p>
-
-
-
-<p>
-  <b>Descripción:</b>
-  <%= @professional.information %>
-</p>
-
-
-<p>
-  <b>Años de Experiencia:</b>
-  <%= @professional.experience %>
-</p>
-
-<p>
-  <b>Precio de Mercado:</b>
-  <%= @professional.market_price %>
-</p>
-
-<p>
-  <b>Ahorro:</b>
-  <%= @professional.saving_price %>
-</p>
-
-<p>
-  <b>Precio Final:</b>
-  <%= @professional.final_price %>
-</p>
-
-
-
-
-
-
-<%= link_to 'Back', professionals_path, class: "btn btn-small btn-inverse" %> 
-<%= link_to 'Edit', edit_professional_path(@professional), class: "btn btn-small btn-inverse" %> 
+          <%= link_to 'Back', professionals_path, class: "btn btn-small btn-inverse" %> 
+          <%= link_to 'Edit', edit_professional_path(@professional), class: "btn btn-small btn-inverse" %> 
      </div>
     </div>
   </div>
 </div>
+
+
+          
+
+
+  
+
+
+
+
+
+
+
+
+
+

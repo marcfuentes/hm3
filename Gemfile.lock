@@ -22,6 +22,8 @@ GEM
       activesupport (= 3.2.13)
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
+    activerecord-tableless (1.2.0)
+      activerecord (>= 2.3.0)
     activeresource (3.2.13)
       activemodel (= 3.2.13)
       activesupport (= 3.2.13)
@@ -112,6 +114,8 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mail_form (1.4.1)
+      actionmailer (~> 3.0)
     mime-types (1.23)
     mini_magick (3.6.0)
       subexec (~> 0.2.1)
@@ -207,6 +211,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-tableless (~> 1.0)
   better_errors
   binding_of_caller
   bootstrap-sass
@@ -226,6 +231,7 @@ DEPENDENCIES
   hub
   jquery-rails
   launchy
+  mail_form
   mini_magick
   pg
   quiet_assets

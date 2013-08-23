@@ -1,7 +1,4 @@
 
-
-
-
  <!-- Main Area -->
                 <div id="main_area">
                         <!-- Slider -->
@@ -130,59 +127,48 @@
 });
 </script>
   
- <!DOCTYPE html>  
-<html lang="en">  
-  <head>  
-    <meta charset="utf-8">  
-    <title>Example of using default thumbnails from w3resource.com</title>  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <meta name="description" content="Example of using default thumbnails from w3resource.com">  
-    <meta name="author" content="">  
-  
-    <!-- Le styles -->  
-    <link href="twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">  
-    <link href="twitter-bootstrap-v2/docs/assets/css/example-fixed-layout.css" rel="stylesheet">  
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->  
-    <!--[if lt IE 9]>  
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>  
-    <![endif]-->  
-  
-    <!-- Le fav and touch icons -->  
-    <link rel="shortcut icon" href="twitter-bootstrap-v2/docs/examples/images/favicon.ico">  
-    <link rel="apple-touch-icon" href="twitter-bootstrap-v2/docs/examples/images/apple-touch-icon.png">  
-    <link rel="apple-touch-icon" sizes="72x72" href="twitter-bootstrap-v2/docs/examples/images/apple-touch-icon-72x72.png">  
-    <link rel="apple-touch-icon" sizes="114x114" href="twitter-bootstrap-v2/docs/examples/images/apple-touch-icon-114x114.png">  
-  </head>  
-  
-  <body>  
-    <div class="container">  
-      <ul class="thumbnails">  
-        <li class="span4">  
-          <a href="" class="thumbnail">  
-            <img src="http://img.photobucket.com/albums/v234/marfue179/Interior-Centro-Meacutedico-Esteacutetico-Derm-Neo-Beige-Design-10_zps40f1e692.jpg" alt="php tutorial" width="260" height="140" /> <p>ELIGE</p> 
-          </a>  
-        </li>  
-        <li class="span4">  
-           <a href="http://www.w3resource.com/sql/tutorials.php" class="thumbnail">  
-             <img src="http://img.photobucket.com/albums/v234/marfue179/152088src_zps81ee17fe.jpg" alt="mysql tutorial" width="260" height="140" />  
-           </a>  
-        </li>  
-        <li class="span4">  
-           <a href="http://www.w3resource.com/javascript/javascript.php" class="thumbnail">  
-              <img src="http://img.photobucket.com/albums/v234/marfue179/spa-2-520_zps331f1522.jpg" alt="js tutorial" width="260" height="140" >  
-           </a>  
-        </li>  
-      </ul>  
-     <hr>  
-    </div> <!-- /container -->  
-  </body>  
-</html>  
 
-<% if user_signed_in? %>
-    <p>Bienvenido <%= current_user.email %></p>
-    <p><%= link_to "cerrar sesión", destroy_user_session_path, method: delete %></p>
-<%else%>
-    <p><%= link_to "Crear una cuenta", new_user_registration_path, class: "btn btn-large btn-info" %></p>
-    <p>Si ya tienes cuenta: <%= link_to "Ingresa a tu cuenta", new_user_session_path, class: "btn btn-large btn-info" %></p>
-<%end%>
+
+
+
+<div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="http://img.photobucket.com/albums/v234/marfue179/Interior-Centro-Meacutedico-Esteacutetico-Derm-Neo-Beige-Design-10_zps40f1e692.jpg">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+          <p><a class="btn" href="#">View details »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="data:image/png;">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="data:image/png;">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details »</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+ 
+
+
+<div class="row">
+  <div class="span6 offset3">
+     <div class="well well large">
+       <% if user_signed_in? %>
+         <p>Bienvenido <%= current_user.email %></p>
+         <p><%= link_to "cerrar sesión", destroy_user_session_path, method: delete %></p>
+       <%else%>
+         <p><%= link_to "Crear una cuenta", new_user_registration_path, class: "btn btn-large btn-block btn-info" %></p>
+         <h2>Si ya tienes cuenta</h2> <%= link_to "Ingresa a tu cuenta", new_user_session_path, class: "btn btn-large btn-block btn-info" %>
+       <%end%>
+      </div>
+   </div>
+</div>
 

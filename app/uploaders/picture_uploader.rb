@@ -7,7 +7,7 @@ class PictureUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
 
   version :thumb do
-  process :resize_to_fill => [150,150]
+  process :resize_to_fill => [140,140]
   end
 
   # Include the Sprockets helpers for Rails 3.1+ asset pipeline compatibility:
