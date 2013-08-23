@@ -2,11 +2,11 @@
  <%= f.error_notification %>
 
   
-    <%= f.input :name %>
-    <%= f.input :email, label: 'Email address' %>
-    <%= f.input :message_title, label: 'Title' %>
-    <%= f.input :message_body, label: 'Your message', as: :text , input_html:{ rows: "6" } %>
+    <%= f.input :name, label: 'Nombre' %>
+    <%= f.input :email, label: 'Email ' %>
+    <%= f.input :message_title, label: 'Titulo' %>
+    <%= f.input :message_body, label: 'Tu Mensaje', as: :text , input_html:{ rows: "6" } %>
 
   
-    <%= f.submit 'Submit', class: 'btn-large btn-info'  %>
+    <%= f.submit 'Enviar', class: 'btn-large btn-info'  %>
     <% end %>

@@ -9,7 +9,7 @@ class MessagesController < ApplicationController
     if message.deliver
       redirect_to root_path, :notice => 'Email has been sent.'
     else
-      redirect_to root_path, :notice => 'Email could not be sent.'
+      redirect_to messages_path, :notice => 'Email could not be sent.'
     end
   end
 

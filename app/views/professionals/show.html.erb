@@ -1,7 +1,12 @@
+
+
 <div class="container">
   <div class="row">
-    <div class="span9 offset2">
+    <div class="span8 offset2">
       <div class="well well large">
+
+      
+
         <%= image_tag(@professional.picture_url, :width => "15%") if @professional.picture.present? %>
           
          <h3><%= @professional.name %></h3>
@@ -37,14 +42,14 @@
           </h3>
 
 
-          <%= link_to 'Back', professionals_path, class: "btn btn-small btn-inverse" %> 
-          <%= link_to 'Edit', edit_professional_path(@professional), class: "btn btn-small btn-inverse" %> 
-     </div>
     </div>
   </div>
 </div>
 
 
+          <%= link_to 'Back', professionals_path, class: "btn btn btn-default" %> 
+          <%= link_to 'Edit', edit_professional_path(@professional), class: "btn btn btn-default" %> 
+     </div>
           
 
 
