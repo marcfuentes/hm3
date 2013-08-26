@@ -31,8 +31,8 @@ gem 'rolify'
 gem 'simple_form'
 gem 'gmaps4rails'
 gem 'high_voltage'
-gem "activerecord-tableless", "~> 1.0"
 gem 'mail_form'
+gem 'bloggy'
 
 group :development do
   gem 'better_errors'

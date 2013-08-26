@@ -9,9 +9,10 @@ Hm3::Application.routes.draw do
   devise_for :users
   resources :users
 
-  
-
   resources :messages, only: [:index, :create]
+
+  match 'blog' => 'blog#index'
+  match 'blog/:title' => 'blog#post'
   
 
 end
