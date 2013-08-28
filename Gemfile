@@ -33,6 +33,7 @@ gem 'gmaps4rails'
 gem 'high_voltage'
 gem 'mail_form'
 gem 'bloggy'
+gem 'rails_admin'
 
 group :development do
   gem 'better_errors'
