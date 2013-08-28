@@ -1,14 +1,13 @@
 
-
-<div class="container">
-  <div class="row">
-    <div class="span8 offset2">
-      <div class="well well large">
-
+<div class="well well large">
+  <article class='row-fluid'>
+    
+    <div class="pro_thumb span4 offset1">
       
+        <%= image_tag(@professional.picture_url, :width => "45%") if @professional.picture.present? %>
 
-        <%= image_tag(@professional.picture_url, :width => "15%") if @professional.picture.present? %>
-          
+    </div>
+         <div class="info_pro span6 offset0 "> 
          <h3><%= @professional.name %></h3>
          <h4><%= @professional.clinic %></h4>
 
@@ -37,19 +36,22 @@
           </p>
 
           <h3>
-            <b>Precio Final:</b>
+            Precio Final:
             <%= @professional.final_price %>
           </h3>
 
+        </div>
 
+
+</div>
     </div>
   </div>
-</div>
+
 
 
           <%= link_to 'Back', professionals_path, class: "btn btn btn-default" %> 
           <%= link_to 'Edit', edit_professional_path(@professional), class: "btn btn btn-default" %> 
-     </div>
+
           
 
 

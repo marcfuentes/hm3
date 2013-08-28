@@ -9,15 +9,15 @@
           <div class="pro_thumb span4 offset2">
             <%= image_tag professional.picture_url(:thumb) if professional.picture?%>
           </div>
-          <div class="info_pro span6">
+          <div class="info_pro span5">
             <h3><%= link_to professional.name, professional %></h3>
             <ul>
-                <li> <strong>Dirección: </strong> <%= professional.address %></li>
-                <li> <strong>Clinica: </strong> <%= professional.clinic %></li>
-                <li> <strong>Años de experiencia: </strong> <%= professional.experience %></li>
-                <%= link_to 'Show', professional %>
-                <%= link_to 'Edit', edit_professional_path(professional) %>
-                <%= link_to 'Destroy', professional, method: :delete, data: { confirm: 'Are you sure?' } %>
+                <li><p> <strong>Dirección: </strong><%= professional.address %></li></p>
+                <li><p> <strong>Clinica: </strong><%= professional.clinic %></p></li>
+                <li><p> <strong>Años de experiencia: </strong><%= professional.experience %></p></li>
+                <%= link_to 'Show', professional, class: "btn btn-default"  %>
+                <%= link_to 'Edit', edit_professional_path(professional), class: "btn btn-default" %>
+                <%= link_to 'Destroy', professional, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %>
                 
           </div>
          </div> 
@@ -25,7 +25,7 @@
       </article>
 
     <%end%>
-    <%= link_to 'New Professional', new_professional_path, class: "btn btn-inverse" %>
+    <%= link_to 'New Professional', new_professional_path, class: "btn btn-info" %>
 </section>
         
 
