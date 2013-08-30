@@ -1,4 +1,6 @@
 class ProfessionalsController < ApplicationController
+
+  
   # GET /professionals
   # GET /professionals.json
   def index

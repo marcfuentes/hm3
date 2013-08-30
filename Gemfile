@@ -34,6 +34,7 @@ gem 'high_voltage'
 gem 'mail_form'
 gem 'bloggy'
 gem 'rails_admin'
+gem 'money-rails'
 
 group :development do
   gem 'better_errors'

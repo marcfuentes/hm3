@@ -84,9 +84,6 @@ h3 {
   font-family: sans-serif;
   font-size: 1.6em;
   
-  margin-bottom: 15px;
-  
-  
   font-weight: normal;
   color: #222;
 }
@@ -98,7 +95,30 @@ h4 {
   font-weight: normal;
   color: #333;
 
+
 }
+
+h5 {
+
+  font-family: sans-serif;
+  font-size: 1.1em;
+  line-height: 1.7em;
+  
+  color: #FF0000;
+
+}
+
+h6 {
+
+  font-family: sans-serif;
+  font-size: 1.6em;
+  
+  font-weight: normal;
+  color: #0066FF;
+
+
+}
+
 
 p {
   font-size: 1.1em;
@@ -133,11 +153,11 @@ footer {
 }
 
 footer a {
-  color: #222;
+  color: #555;
 }
 
 footer a:hover {
-  color: #555;
+  color: #333;
 }
 
 footer small {
@@ -157,3 +177,20 @@ footer ul li {
 
 
 
+/* perfiles */
+
+.pro_thumb  {
+
+ margin-top: 1em;
+ position: relative;
+
+
+}
+
+
+/* link */
+
+.link {
+color: #0066FF;
+
+}

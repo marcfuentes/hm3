@@ -1,9 +1,13 @@
 class Professional < ActiveRecord::Base
   attr_accessible :address, :clinic, :experience, :final_price, :gmaps, :information, :latitude, :longitude, :market_price, :name, :picture, :saving_price
 
-mount_uploader :picture, PictureUploader
+  mount_uploader :picture, PictureUploader
 
-acts_as_gmappable
+  acts_as_gmappable
+
+  monetize :final_price
+
+  
 
  
   def gmaps4rails_address

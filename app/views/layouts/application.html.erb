@@ -13,13 +13,7 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
-    <head>
-    <% if content_for?(:title) %>
-      <%= content_for(:title) %>
-    <% else %>
-      <title>Some Default Title</title>
-    <% end %>
-   </head>
+    
 
 
   </head>
@@ -30,8 +24,9 @@
           <a class="brand" href="http://localhost:3000"> <img src="http://img.photobucket.com/albums/v234/marfue179/logonavbar_zps051324af.jpg" alt="Health_Me_logo_transparent"></a>
           <%= render 'layouts/navigation' %>
           <ul class="nav">
+             <li class="divider-vertical"></li>
              <li><%= link_to "Dentistas", "/professionals" %></li>
-            
+             <li class="divider-vertical"></li>
            </ul>
         </div>
       </nav>

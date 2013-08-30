@@ -1,12 +1,12 @@
-
 <div class="well well large">
   <article class='row-fluid'>
     
     <div class="pro_thumb span4 offset1">
       
         <%= image_tag(@professional.picture_url, :width => "45%") if @professional.picture.present? %>
-
     </div>
+
+
          <div class="info_pro span6 offset0 "> 
          <h3><%= @professional.name %></h3>
          <h4><%= @professional.clinic %></h4>
@@ -25,20 +25,22 @@
             <%= @professional.experience %>
           </p>
 
-          <p>
-            <b>Precio de Mercado:</b>
-            <%= @professional.market_price %>
-          </p>
+          
+           <p><b>Precio de Mercado:</b>
+            <%= money_without_cents_and_with_symbol @professional.final_price %></p>
+          
 
           <p>
             <b>Ahorro:</b>
-            <%= @professional.saving_price %>
+
+            <%= money_without_cents_and_with_symbol @professional.saving_price %>
           </p>
 
-          <h3>
+          <h6>
             Precio Final:
-            <%= @professional.final_price %>
-          </h3>
+          
+            <%= money_without_cents_and_with_symbol @professional.final_price %>
+          </h6>
 
         </div>
 
@@ -50,7 +52,9 @@
 
 
           <%= link_to 'Back', professionals_path, class: "btn btn btn-default" %> 
+
           <%= link_to 'Edit', edit_professional_path(@professional), class: "btn btn btn-default" %> 
+          
 
           
 
