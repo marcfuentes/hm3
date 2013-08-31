@@ -27,13 +27,13 @@
 
           
            <p><b>Precio de Mercado:</b>
-            <%= money_without_cents_and_with_symbol @professional.final_price %></p>
+            <%= number_to_currency (@professional.final_price)%></p>
           
 
           <p>
             <b>Ahorro:</b>
 
-            <%= money_without_cents_and_with_symbol @professional.saving_price %>
+            <%= money_without_cents_and_with_symbol (@professional.saving_price)%>
           </p>
 
           <h6>

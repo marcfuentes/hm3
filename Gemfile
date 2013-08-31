@@ -35,6 +35,8 @@ gem 'mail_form'
 gem 'bloggy'
 gem 'rails_admin'
 gem 'money-rails'
+gem 'will_paginate', '~> 3.0'
+gem 'will_paginate-bootstrap'
 
 group :development do
   gem 'better_errors'

@@ -4,7 +4,7 @@ class ProfessionalsController < ApplicationController
   # GET /professionals
   # GET /professionals.json
   def index
-    @professionals = Professional.all
+    @professionals = Professional.paginate(:page => params[:page], :per_page => 4)
     @json = Professional.all.to_gmaps4rails
 
     @json = Professional.all.to_gmaps4rails  do |professional, marker|
@@ -14,8 +14,10 @@ class ProfessionalsController < ApplicationController
                   :width   => 35,
                   :height  => 35,
                  })
+   
     
    end 
+ 
 
     respond_to do |format|
       format.html # index.html.erb

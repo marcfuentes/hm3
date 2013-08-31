@@ -7,7 +7,7 @@ RailsAdmin.config do |config|
   ################  Global configuration  ################
 
   # Set the admin name here (optional second array element will appear in red). For example:
-  config.main_app_name = ['Hm3', 'Admin']
+  config.main_app_name = ['Health.Me', 'Admin']
   # or for a more dynamic name:
   # config.main_app_name = Proc.new { |controller| [Rails.application.engine_name.titleize, controller.params['action'].titleize] }
 

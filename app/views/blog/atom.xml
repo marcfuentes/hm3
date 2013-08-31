@@ -4,7 +4,7 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2013-08-26T19:46:25-04:00</updated>
+ <updated>2013-08-31T12:39:53-04:00</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
@@ -12,47 +12,13 @@
 
  
  <entry>
-   <title>tercer blog</title>
-   <link href="YOUR_URL/tercer-blog"/>
-   <updated>2013-08-26T00:00:00-04:00</updated>
-   <id>BLOG_URL/tercer-blog</id>
-   <content type="html">&lt;p&gt;Poner a un niño inquieto a dormir es una de las tareas mas difíciles de ser padres! Cuando ya es tarde y el reloj sigue caminando, que no intentarías para que se durmiera? Para compartir en tu blog o website, por favor copia y pega el código de abajo Duerme Bebé, Duerme - Una infografía del equipo de ZocDoc&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>segundo_blog</title>
-   <link href="YOUR_URL/segundo-blog"/>
-   <updated>2013-08-26T00:00:00-04:00</updated>
-   <id>BLOG_URL/segundo-blog</id>
-   <content type="html">&lt;p&gt;One principle necessary to fully understand HTML and CSS is the box model. The box model concept states that every element on a page is a rectangular box, and may include margins, padding, and borders.&lt;/p&gt;
-
-&lt;p&gt;That’s worth repeating. Every element on a page is a rectangular box.&lt;/p&gt;
-
-&lt;p&gt;Having a general understanding of the box model is crucial as websites are primarily built around it. Gaining an understanding of the box model can be frustrating and difficult, but necessary in order to build prevalent websites. Additionally, knowing how to position elements on a page to build a layout is equally important. There are a few different ways to position elements, each of which depend on the content and circumstance.&lt;/p&gt;
-
-&lt;p&gt;Box Sizing&lt;/p&gt;
-
-&lt;p&gt;By now you are fully aware that every element on a page, block or inline level, is a rectangular box. These boxes can come in different sizes and may have margins, padding, and borders to alter their size. The formation of all of these properties together is referred to as the box model. Let’s take a look at the box model, along with these CSS properties to better understand what we are working with.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
    <title>Bienvenido_al_Blog</title>
    <link href="YOUR_URL/bienvenido-al-blog"/>
    <updated>2013-08-26T00:00:00-04:00</updated>
    <id>BLOG_URL/bienvenido-al-blog</id>
-   <content type="html">&lt;p&gt;Bienvenido_al_Blog&lt;/p&gt;
+   <content type="html">&lt;p&gt;Bienvenido al Blog&lt;/p&gt;
 
-&lt;p&gt;One principle necessary to fully understand HTML and CSS is the box model. The box model concept states that every element on a page is a rectangular box, and may include margins, padding, and borders.&lt;/p&gt;
-
-&lt;p&gt;That’s worth repeating. Every element on a page is a rectangular box.&lt;/p&gt;
-
-&lt;p&gt;Having a general understanding of the box model is crucial as websites are primarily built around it. Gaining an understanding of the box model can be frustrating and difficult, but necessary in order to build prevalent websites. Additionally, knowing how to position elements on a page to build a layout is equally important. There are a few different ways to position elements, each of which depend on the content and circumstance.&lt;/p&gt;
-
-&lt;p&gt;Box Sizing&lt;/p&gt;
-
-&lt;p&gt;By now you are fully aware that every element on a page, block or inline level, is a rectangular box. These boxes can come in different sizes and may have margins, padding, and borders to alter their size. The formation of all of these properties together is referred to as the box model. Let’s take a look at the box model, along with these CSS properties to better understand what we are working with.&lt;/p&gt;
+&lt;p&gt;Este espacio estará dedicado a comentar los distintos pensamientos que el equipo de Health.Me tiene respecto a como se desarrolla el tema de la salud, en Chile y en el exterior, porque los aspectos positivos y negativos a los que nos vemos expuestos tienen causas claras aun cuando no siempre sabidas o conocidas por todos.&lt;/p&gt;
 </content>
  </entry>
  
