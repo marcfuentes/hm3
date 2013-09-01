@@ -19,6 +19,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
   gem 'bootswatch-rails'
+  gem 'font-awesome-sass-rails'
 end
 
 gem 'rails-i18n', '~> 3.0.0.pre'

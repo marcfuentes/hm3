@@ -12,10 +12,12 @@
           </div>
           <div class="info_pro span5">
             
-            <h3><%= link_to professional.name, professional %></h3>
+            <h3><i class="icon-user-md"></i> <%= link_to professional.name, professional %></h3>
             <ul>
-                <li><p> <strong>Dirección: </strong><%= professional.address %></li></p>
+
                 <li><p> <strong>Clinica: </strong><%= professional.clinic %></p></li>
+                <li><p> </i> <strong>Dirección: </strong><%= professional.address %></li></p>
+                
                 <li><p> <strong>Años de experiencia: </strong><%= professional.experience %></p></li>
                 <%= link_to 'Show', professional, class: "btn btn-default"  %>
                 <%= link_to 'Edit', edit_professional_path(professional), class: "btn btn-default" %>
