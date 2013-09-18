@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Hm3" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Health.Me" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Health.Me" %>">
     <% if content_for?(:title) %>
       <%= content_for(:title) %>
@@ -13,9 +13,7 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
-    
-
-
+  
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
     <div class="navbar navbar-fixed-top">

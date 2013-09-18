@@ -2,15 +2,15 @@
   <div class="row">
     <div class="span6 offset3">
         <div class="well well large">
-           <h2>Sign up</h2>
+           <h2>Inscribete</h2>
              <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => 'form-vertical' }) do |f| %>
              <%= f.error_notification %>
              <%= display_base_errors resource %>
-             <%= f.input :name, :autofocus => true %>
+             <%= f.input :name, :label => "Nombre",  :autofocus => true %>
              <%= f.input :email, :required => true %>
              <%= f.input :password, :required => true %>
-             <%= f.input :password_confirmation, :required => true %>
-             <%= f.button :submit, 'Sign up', :class => 'btn-info' %>
+             <%= f.input :password_confirmation, :label => "Confirma tu Password",  :required => true %>
+             <%= f.button :submit, 'Inscribete', :class => 'btn-info' %>
            <% end %>
            <%= render "devise/shared/links" %>
         </div>

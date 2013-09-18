@@ -9,7 +9,7 @@
 
          <div class="info_pro span6 offset0 "> 
          <h3><i class="icon-user-md"></i> <%= @professional.name %></h3>
-         <h4><i class="icon-hospital"></i> <%= @professional.clinic %></h4>
+         <h3><i class="icon-hospital"></i> <%= @professional.clinic %></h3>
 
          <p>
            <b>Lugar de la atención:</b>
@@ -26,22 +26,7 @@
           </p>
 
           
-           <p><b>Precio de Mercado:</b>
-            <%= number_to_currency (@professional.final_price)%></p>
-          
-
-          <p>
-            <b>Ahorro:</b>
-
-            <%= money_without_cents_and_with_symbol (@professional.saving_price)%>
-          </p>
-
-          <h6>
-            Precio Final:
-          
-            <%= money_without_cents_and_with_symbol @professional.final_price %>
-          </h6>
-
+           
         </div>
 
 
@@ -50,23 +35,8 @@
   </div>
 
 
-
-          <%= link_to 'Back', professionals_path, class: "btn btn btn-default" %> 
-
+          <% if can? :update, @professional %>
           <%= link_to 'Edit', edit_professional_path(@professional), class: "btn btn btn-default" %> 
+          <% end %>
           
-
-          
-
-
-  
-
-
-
-
-
-
-
-
-
 

@@ -1,5 +1,7 @@
 // First set or import your overrides
-$textColor: #000;
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700");
+
+
 
 // First import journal variables
 @import "bootswatch/simplex/variables";
@@ -63,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-family: Lato;
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
@@ -70,8 +73,9 @@ h1 {
 }
 
 h2 {
+  font-family: Lato;
   font-size: 2.5em;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
@@ -81,15 +85,16 @@ h2 {
 
 
 h3 {
-  font-family: sans-serif;
-  font-size: 1.6em;
+  font-family: Lato;
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
   
   font-weight: normal;
-  color: #222;
+  color: #555;
 }
 
 h4 {
-  font-family: sans-serif;
+  font-family: Lato;
   font-size: 1.4em;
   
   font-weight: normal;
@@ -100,7 +105,7 @@ h4 {
 
 h5 {
 
-  font-family: sans-serif;
+  font-family: Lato;
   font-size: 1.1em;
   line-height: 1.7em;
   
@@ -110,23 +115,85 @@ h5 {
 
 h6 {
 
-  font-family: sans-serif;
-  font-size: 1.6em;
+  font-family: Lato;
+  font-size: 1.7em;
   
   font-weight: normal;
-  color: #0066FF;
+ 
 
 
 }
 
 
 p {
+
+  font-family: Lato;
   font-size: 1.1em;
   line-height: 1.7em;
 
   color: #444;
   }
 
+
+  /* carousel */
+
+.carousel {
+
+  
+}  
+
+
+/* features */
+
+.features {
+
+  width: 1212px;
+  margin-top: 45px;
+  margin-left: -21px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #006dba;
+}
+
+.features h4 {
+  color: #F0FFFF;
+}
+
+
+.features p {
+  color: #F0FFFF;
+}
+
+.features i {
+  color: #F0FFFF;
+}
+
+
+
+/* joinbutton */
+
+.joinbutton {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: -21px;
+  margin-right: -21px;
+  font-color: #F0FFFF;
+  
+  background: rgb(63,76,107); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(63,76,107,1) 0%, rgba(63,76,107,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(63,76,107,1)), color-stop(100%,rgba(63,76,107,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+.joinbutton h2 {
+  color: #F0FFFF;
+}
 
 
 /* footer */
@@ -139,6 +206,10 @@ footer {
 
   padding-top: 95px;
   padding-bottom: 20px;
+
+  font-family: Lato;
+  font-size: 15px;
+ 
   
   color: #333;
   background: rgb(255,255,255); /* Old browsers */
@@ -150,14 +221,16 @@ footer {
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
   margin-bottom:-18px;
+  
+
 }
 
 footer a {
-  color: #555;
+  color: #666;
 }
 
 footer a:hover {
-  color: #333;
+  color: #5ec1de;
 }
 
 footer small {
@@ -173,7 +246,6 @@ footer ul li {
   float: left;
   margin-left: 100px;
 }
-  
 
 
 
@@ -191,5 +263,52 @@ footer ul li {
 
 .link {
 color: #0066FF;
+
+}
+
+
+/* home (blog) */
+
+.title {
+
+  width: 1212px;
+  
+  margin-left: -21px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #80b6da;
+
+}
+
+.list {
+  
+  width: 1212px;
+  
+  margin-left: -21px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: rgb(63,76,107); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(63,76,107,1) 0%, rgba(63,76,107,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(63,76,107,1)), color-stop(100%,rgba(63,76,107,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+
+}
+
+.list li {
+  color: #F0FFFF;
+}
+
+.well {
+
+  box-shadow: 1px 1px 10px #444;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 12px;
+  
 
 }

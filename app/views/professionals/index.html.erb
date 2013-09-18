@@ -19,10 +19,18 @@
                 <li><p> </i> <strong>Dirección: </strong><%= professional.address %></li></p>
                 
                 <li><p> <strong>Años de experiencia: </strong><%= professional.experience %></p></li>
+
+                <% if can? :read, @professional %>
                 <%= link_to 'Show', professional, class: "btn btn-default"  %>
+                <% end %>
+
+                <% if can? :update, @professional %>
                 <%= link_to 'Edit', edit_professional_path(professional), class: "btn btn-default" %>
+                <% end %>
+
+                <% if can? :destroy, @professional %>
                 <%= link_to 'Destroy', professional, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %>
-                
+                <% end %>
           </div>
          </div> 
 
@@ -30,13 +38,12 @@
 
     <%end%>
     
-    <%= will_paginate @professionals, renderer: BootstrapPagination::Rails  %>
-
+    <%= will_paginate @professionals, renderer: BootstrapPagination::Rails, :previous_label => 'Anterior', :next_label => 'Siguiente'   %>
+    <% if can? :update, @professional %>
     <%= link_to 'New Professional', new_professional_path, class: "btn btn-info" %>
+    <%end%>
 </section>
         
-
-
 
   
     

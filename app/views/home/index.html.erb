@@ -1,4 +1,4 @@
-
+<section id="carousel" class="carousel">
  <!-- Main Area -->
                 <div id="main_area">
                         <!-- Slider -->
@@ -90,18 +90,50 @@
  
 });
 </script>
-  
+  </section>
+
+<section id="features" class="features">
+  <div class="container">
+    <div class="row-fluid">
+
+      
+
+      <div class="span4">
+        <div class="feature">
+          <i class="icon-map-marker icon-2x pull-left"></i>
+          <h4>Observa en el mapa</h4>
+          <p>Al observar y ubicarte en el mapa, tendrás una visualizacion de los profesionales más cercanos a tu ubicación.</p>
+        </div>
+      </div><!-- /span3 -->
+
+      <div class="span4">
+        <div class="feture">
+          <i class="icon-group icon-2x pull-left"></i>
+          <h4>Datos sobre los dentistas</h4>
+          <p>Luego de visualizar el area en la que buscas el profesional, podras chequear sus datos e informacion reelevante.</p>
+        </div>
+      </div><!-- /span3 -->
+      
+      <div class="span4">
+        <div class="feature">
+          <i class="icon-laptop icon-2x pull-left"></i>
+          <h4>Agendar</h4>
+          <p>Finalmente podras agendar con el profesional más adecuado a tus necesidades, a un precio que solo Health.Me puede entregarte.</p>
+        </div>
+      </div><!-- /span3 -->
+    </div><!-- /row-fluid -->
+  </div><!-- /container -->
+</section>
 
 
 
 
 
- 
 
-
-<div class="row">
-  <div class="span6 offset3">
-     <div class="well well large">
+<section id="joinbutton" class="joinbutton">
+<div class="row-fluid">
+  <div class="span4 offset4">
+     
        <% if user_signed_in? %>
          <p>Bienvenido <%= current_user.email %></p>
          <p><%= link_to "cerrar sesión", destroy_user_session_path, method: delete %></p>
@@ -109,17 +141,8 @@
          <p><%= link_to "Crear una cuenta", new_user_registration_path, class: "btn btn-large btn-block btn-info" %></p>
          <h2>Si ya tienes cuenta</h2> <%= link_to "Ingresa a tu cuenta", new_user_session_path, class: "btn btn-large btn-block btn-info" %>
        <%end%>
-      </div>
+     
    </div>
 </div>
-
-<%= form_for("user", :url => user_session_path) do |f| %>
-  <%= f.text_field :email, label: 'Nombre' %>
-  <%= f.password_field :password %>
-  <%= f.check_box :remember_me %>
-  <%= f.label :remember_me %>
-  <%= f.submit 'Sign in' %>
-  <%= link_to "Forgot your password?", new_password_path('user') %>
-<% end %>
-
+</section>
 
