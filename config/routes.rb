@@ -1,4 +1,10 @@
 Hm3::Application.routes.draw do
+  resources :services
+
+  resources :professional_services
+
+
+
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   resources :professionals

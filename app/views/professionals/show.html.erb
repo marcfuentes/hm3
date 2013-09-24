@@ -8,29 +8,24 @@
 
 
          <div class="info_pro span6 offset0 "> 
-         <h3><i class="icon-user-md"></i> <%= @professional.name %></h3>
-         <h3><i class="icon-hospital"></i> <%= @professional.clinic %></h3>
+           <h2><i class="icon-user-md"></i> <%= @professional.name %></h2>
+           <h3><i class="icon-hospital"></i> <%= @professional.clinic %></h3>
 
-         <p>
-           <b>Lugar de la atención:</b>
-           <%= @professional.address %>
-        </p>
-         <p>
-          <b>Descripción:</b>
-            <%= @professional.information %>
-          </p>
+          
+             <h3><i class="icon-map-marker"> </i><%= @professional.address %></h3>
+          
+             <p><%= @professional.information %></p>
 
-          <p>
-            <b>Años de Experiencia:</b>
-            <%= @professional.experience %>
-          </p>
+              
+              <p><b>Años de experiencia</b> <%= @professional.experience %>
+            </p>
 
           
            
         </div>
 
 
-</div>
+     </div>
     </div>
   </div>
 

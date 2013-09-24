@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Health.Me" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Health.Me" %>">
-    <% if content_for?(:title) %>
-      <%= content_for(:title) %>
-    <% else %>
-      <title>Some Default Title</title>
-    <% end %>
+    <title>Health.Me</title>
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
-  
   </head>
-  <body class="<%= controller_name %> <%= action_name %>">
+
     <div class="navbar navbar-fixed-top">
-      <nav class="navbar-inner">
+      <div class="navbar-inner">
         <div class="container">
+ 
+         <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </a>
+ 
+          <!-- Be sure to leave the brand out there if you want it shown -->
+
           <a class="brand" href="http://localhost:3000"> <img src="http://img.photobucket.com/albums/v234/marfue179/logonavbar_zps051324af.jpg" alt="Health_Me_logo_transparent"></a>
-          <%= render 'layouts/navigation' %>
-          <ul class="nav">
-             <li class="divider-vertical"></li>
-             <li><%= link_to "Dentistas", "/professionals" %></li>
-             <li class="divider-vertical"></li>
+
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="divider-vertical"></li>
+              <li><%= link_to "Dentistas", "/professionals" %></li>
+              <li class="divider-vertical"></li>
            </ul>
-        </div>
-      </nav>
+            
+          <ul class="nav pull-right">
+            <%= render 'layouts/navigation' %>
+
+        </ul>
+      </div>
+ 
     </div>
+  </div>
+</div>
+  
+
     <div id="main" role="main">
       <div class="container">
         <div class="content">

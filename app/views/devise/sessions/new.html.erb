@@ -4,10 +4,10 @@
        <div class="well well large">
          <h2>Inicia Sesión</h2>
            <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => 'form-vertical' }) do |f| %>
-           <%= f.input :email, :autofocus => true %>
-           <%= f.input :password %>
+           <%= f.input :email, :label => "Correo Electronico", :autofocus => true %>
+           <%= f.input :password, :label => "Constraseña" %>
            <%= f.input :remember_me, :as => :boolean if devise_mapping.rememberable? %>
-           <%= f.button :submit, "Inicia Sesión", :class => 'btn-info' %>
+           <%= f.button :submit, "Inicia Sesión", :class => 'btn-large btn-info' %>
          <% end %>
          <%= render "devise/shared/links" %>
        </div>

@@ -74,12 +74,12 @@ h1 {
 
 h2 {
   font-family: Lato;
-  font-size: 2.5em;
+  font-size: 2.0em;
   letter-spacing: 1.5px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-bottom: 20px;
+  
   font-weight: normal;
-  color: #222;
+  color: #333;
 }
 
 
@@ -87,9 +87,7 @@ h2 {
 h3 {
   font-family: Lato;
   font-size: 1.5em;
-  letter-spacing: 1.5px;
-  
-  font-weight: normal;
+  letter-spacing: 1.2px;
   color: #555;
 }
 
@@ -106,10 +104,10 @@ h4 {
 h5 {
 
   font-family: Lato;
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.7em;
   
-  color: #FF0000;
+  color: #666;
 
 }
 
@@ -152,20 +150,20 @@ p {
   margin-left: -21px;
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #006dba;
+  background: #f0f0f0;
 }
 
 .features h4 {
-  color: #F0FFFF;
+  color: #444;
 }
 
 
 .features p {
-  color: #F0FFFF;
+  color: #666;
 }
 
 .features i {
-  color: #F0FFFF;
+  color: #666;
 }
 
 
@@ -179,15 +177,7 @@ p {
   margin-right: -21px;
   font-color: #F0FFFF;
   
-  background: rgb(63,76,107); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(63,76,107,1) 0%, rgba(63,76,107,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(63,76,107,1)), color-stop(100%,rgba(63,76,107,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
-
+  background: #f0f0f0
 
 }
 
@@ -310,5 +300,38 @@ color: #0066FF;
   border-radius: 5px;
   margin: 12px;
   
-
 }
+
+
+/* navbar  */
+
+.navbar {
+
+  font-family: Lato;
+  font-size: 1.3em;
+  font-color: #80b6da;
+
+  
+}
+
+/* navbar font */
+
+.navbar .nav > li > a {
+    float: none;
+    line-height: 20px;
+    padding: 15px 10px 11px;
+    text-decoration: none;
+    
+    color:  #555;
+}
+div.navbar div.navbar-inner ul.nav a:hover {
+    color: #5ec1de !important; 
+}
+
+/* linkcolor */
+
+a.newcolor{
+      color: #006dba;
+      color-hover: #1111;
+       
+     }

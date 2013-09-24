@@ -12,13 +12,14 @@
           </div>
           <div class="info_pro span5">
             
-            <h3><i class="icon-user-md"></i> <%= link_to professional.name, professional %></h3>
+            <h3><i class="icon-user-md"></i> <%= link_to professional.name, professional, :class => "newcolor" %></h3>
             <ul>
 
-                <li><p> <strong>Clinica: </strong><%= professional.clinic %></p></li>
-                <li><p> </i> <strong>Dirección: </strong><%= professional.address %></li></p>
+                <h5><%= professional.clinic %></h5>
+
+                <p> </i> <strong>Dirección: </strong><%= professional.address %></li>
                 
-                <li><p> <strong>Años de experiencia: </strong><%= professional.experience %></p></li>
+                <p> <strong>Años de experiencia: </strong><%= professional.experience %></p>
 
                 <% if can? :read, @professional %>
                 <%= link_to 'Show', professional, class: "btn btn-default"  %>
