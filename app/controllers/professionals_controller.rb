@@ -4,9 +4,12 @@ class ProfessionalsController < ApplicationController
   # GET /professionals
   # GET /professionals.json
   def index
-    @professionals = Professional.paginate(:page => params[:page], :per_page => 4)
-    @json = Professional.all.to_gmaps4rails
 
+    @q = Professional.search(params[:q])
+    @professionals = @q.result(distinct: true)
+    
+    
+    @json = Professional.all.to_gmaps4rails
     @json = Professional.all.to_gmaps4rails  do |professional, marker|
     marker.infowindow render_to_string(:partial => "/professionals/gmaps4rails_infowindow", :locals => { :professional => professional})
     marker.picture({
@@ -14,10 +17,9 @@ class ProfessionalsController < ApplicationController
                   :width   => 35,
                   :height  => 35,
                  })
-   
-    
    end 
- 
+
+   
 
     respond_to do |format|
       format.html # index.html.erb
@@ -40,6 +42,7 @@ class ProfessionalsController < ApplicationController
   # GET /professionals/new.json
   def new
     @professional = Professional.new
+    
 
     respond_to do |format|
       format.html # new.html.erb
@@ -51,12 +54,12 @@ class ProfessionalsController < ApplicationController
   def edit
     @professional = Professional.find(params[:id])
   end
-
+    
   # POST /professionals
   # POST /professionals.json
   def create
     @professional = Professional.new(params[:professional])
-
+     
     respond_to do |format|
       if @professional.save
         format.html { redirect_to @professional, notice: 'Professional was successfully created.' }
@@ -72,7 +75,10 @@ class ProfessionalsController < ApplicationController
   # PUT /professionals/1.json
   def update
     @professional = Professional.find(params[:id])
+    params[:professional][:service_ids] ||= []
 
+      
+    
     respond_to do |format|
       if @professional.update_attributes(params[:professional])
         format.html { redirect_to @professional, notice: 'Professional was successfully updated.' }

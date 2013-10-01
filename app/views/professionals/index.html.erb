@@ -1,5 +1,21 @@
 
+
 <%= gmaps4rails(@json) %>
+
+<section id="search" class="search">
+  <div class="row-fluid">
+    <div class="span4 offset4">
+      <div class="input-append">
+      <%= search_form_for @q do |f| %>
+
+      <%= f.collection_select :services_id_eq, Service.order(:name), :id, :name %>
+       <%= f.submit "Buscar", class: "btn btn btn-info"  %>
+      <% end %>
+      </div>
+ 
+    </div>
+  </div>
+</section>
 
 
 
@@ -21,9 +37,7 @@
                 
                 <p> <strong>Años de experiencia: </strong><%= professional.experience %></p>
 
-                <% if can? :read, @professional %>
-                <%= link_to 'Show', professional, class: "btn btn-default"  %>
-                <% end %>
+               
 
                 <% if can? :update, @professional %>
                 <%= link_to 'Edit', edit_professional_path(professional), class: "btn btn-default" %>
@@ -39,7 +53,7 @@
 
     <%end%>
     
-    <%= will_paginate @professionals, renderer: BootstrapPagination::Rails, :previous_label => 'Anterior', :next_label => 'Siguiente'   %>
+    
     <% if can? :update, @professional %>
     <%= link_to 'New Professional', new_professional_path, class: "btn btn-info" %>
     <%end%>

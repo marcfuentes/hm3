@@ -1,5 +1,5 @@
 class Professional < ActiveRecord::Base
-  attr_accessible :address, :clinic, :experience, :final_price, :gmaps, :information, :latitude, :longitude, :market_price, :name, :picture, :saving_price
+  attr_accessible :address, :clinic, :experience, :final_price, :gmaps, :information, :latitude, :longitude, :market_price, :name, :picture, :saving_price, :education, :profession, :speciality, :service_ids
 
   mount_uploader :picture, PictureUploader
 
@@ -7,14 +7,12 @@ class Professional < ActiveRecord::Base
 
   monetize :final_price
 
-  validates :address, :clinic, :experience, :final_price, :gmaps, :information, :latitude, :longitude, :market_price, :name, :picture, :saving_price, :presence => true 
+  validates :address, :clinic, :experience, :gmaps, :information, :latitude, :longitude, :name, :picture, :education, :presence => true 
 
   has_many  :professional_services
   has_many  :services, :through => :professional_services
 
 
-
-  
 
  
   def gmaps4rails_address

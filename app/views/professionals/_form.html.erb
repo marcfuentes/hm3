@@ -7,8 +7,11 @@
 
            <div class="form-inputs">
              <%= f.input :name %>
+             <%= f.input :profession %>
+             <%= f.input :speciality %>
              <%= f.input :address %>
              <%= f.input :clinic %>
+             <%= f.input :education %>
              <%= f.input :information %>
              <%= f.input :picture %>
              <%= f.input :experience %>
@@ -18,6 +21,13 @@
              <%= f.input :longitude %>
              <%= f.input :latitude %>
              <%= f.input :gmaps %>
+
+
+             </div class="field">
+<% Service.all.each do |service| %>
+<%= check_box_tag "professional[service_ids][]", service.id, @professional.services.include?(service) %>
+<%= label_tag dom_id(service), service.name %><br>
+<% end %>
            </div>
 
           <div class="form-actions">

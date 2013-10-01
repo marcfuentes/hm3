@@ -1,4 +1,6 @@
 Hm3::Application.routes.draw do
+  resources :appointments
+
   resources :services
 
   resources :professional_services

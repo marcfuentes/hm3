@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130918210019) do
+ActiveRecord::Schema.define(:version => 20130925010300) do
 
   create_table "professional_services", :force => true do |t|
     t.integer  "professional_id"
@@ -35,6 +35,9 @@ ActiveRecord::Schema.define(:version => 20130918210019) do
     t.boolean  "gmaps"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.string   "education"
+    t.string   "profession"
+    t.string   "speciality"
   end
 
   create_table "rails_admin_histories", :force => true do |t|
