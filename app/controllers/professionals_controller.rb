@@ -5,17 +5,18 @@ class ProfessionalsController < ApplicationController
   # GET /professionals.json
   def index
 
+    #ransack implementation
     @q = Professional.search(params[:q])
     @professionals = @q.result(distinct: true)
-    
-    
+
+    #gmaps4rails implementation
     @json = Professional.all.to_gmaps4rails
     @json = Professional.all.to_gmaps4rails  do |professional, marker|
     marker.infowindow render_to_string(:partial => "/professionals/gmaps4rails_infowindow", :locals => { :professional => professional})
     marker.picture({
                   :picture => "/img/Clinica Tabancura.png",
-                  :width   => 35,
-                  :height  => 35,
+                  :width   => 30,
+                  :height  => 30,
                  })
    end 
 

@@ -6,28 +6,29 @@
          <%= f.error_notification %>
 
            <div class="form-inputs">
-             <%= f.input :name %>
-             <%= f.input :profession %>
-             <%= f.input :speciality %>
-             <%= f.input :address %>
-             <%= f.input :clinic %>
-             <%= f.input :education %>
-             <%= f.input :information %>
-             <%= f.input :picture %>
-             <%= f.input :experience %>
+             <%= f.input :name, :label => "Nombre" %>
+             <%= f.input :profession, :label => "Profesión" %>
+             <%= f.input :speciality, :label => "Especialidad" %>
+             <%= f.input :address, :label => "Dirección" %>
+             <%= f.input :clinic, :label => "Clinica" %>
+             <%= f.input :education, :label => "Educacion" %>
+             <%= f.input :information, :label => "Información" %>
+             <%= f.input :picture, :label => "Foto" %>
+             <%= f.input :experience, :label => "Experiencia" %>
              <%= f.input :market_price %>
              <%= f.input :saving_price %>
              <%= f.input :final_price %>
              <%= f.input :longitude %>
              <%= f.input :latitude %>
              <%= f.input :gmaps %>
+  
 
 
-             </div class="field">
-<% Service.all.each do |service| %>
-<%= check_box_tag "professional[service_ids][]", service.id, @professional.services.include?(service) %>
-<%= label_tag dom_id(service), service.name %><br>
-<% end %>
+            </div class="field">
+             <% Service.all.each do |service| %>
+             <%= check_box_tag "professional[service_ids][]", service.id, @professional.services.include?(service) %>
+             <%= label_tag dom_id(service), service.name %><br>
+             <% end %>
            </div>
 
           <div class="form-actions">
