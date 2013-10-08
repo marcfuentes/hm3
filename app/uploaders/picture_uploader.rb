@@ -10,6 +10,16 @@ class PictureUploader < CarrierWave::Uploader::Base
   process :resize_to_fill => [140,140]
   end
 
+  version :resized do
+    # returns an image with a maximum width of 100px 
+    # while maintaining the aspect ratio
+    # 10000 is used to tell CW that the height is free 
+    # and so that it will hit the 100 px width first
+    process :resize_to_fit => [-1, 500]
+  end
+
+
+
   # Include the Sprockets helpers for Rails 3.1+ asset pipeline compatibility:
   # include Sprockets::Helpers::RailsHelper
   # include Sprockets::Helpers::IsolatedHelper
