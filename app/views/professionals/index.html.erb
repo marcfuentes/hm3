@@ -5,7 +5,7 @@
 <section id="search" class="search">
   <div class="row-fluid">
     <div class="span4 offset4">
-      <h6>Busca tu tratamiento</h6>
+      <h6>Tratamientos</h6>
       <div class="input-append">
 
       <%= search_form_for @q do |f| %>
@@ -30,7 +30,7 @@
           </div>
           <div class="info_pro span5">
             
-            <h3><i class="icon-user-md"></i> <%= link_to professional.name, professional, :class => "newcolor" %></h3>
+            <h3> <%= link_to professional.name, professional, :class => "newcolor" %></h3>
             <ul>
 
                 <h5><%= professional.clinic %></h5>

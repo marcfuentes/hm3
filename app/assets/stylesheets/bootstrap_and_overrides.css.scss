@@ -134,6 +134,7 @@ p {
   }
 
 
+
   /* carousel */
 
 .carousel {
@@ -238,7 +239,13 @@ footer ul li {
   margin-left: 100px;
 }
 
+footer b {
+  color: #777;
+}
 
+footer c {
+  color: #999;
+}
 
 /* perfiles */
 
@@ -265,11 +272,21 @@ footer ul li {
 
 }
 
+.info_details i {
+  color: #5ec1de;
+}
+
 .biography {
 
   
   margin-top:5em;
   
+}
+
+.services_pro {
+
+  margin-top:1em;
+
 
 }
 
