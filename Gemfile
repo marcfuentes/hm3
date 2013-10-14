@@ -38,7 +38,6 @@ gem 'rails_admin'
 gem 'money-rails'
 #gem 'will_paginate', '~> 3.0'
 #gem 'will_paginate-bootstrap'
-gem "appointments", "~> 1.3.3"
 gem "ransack"
 
 group :development do
