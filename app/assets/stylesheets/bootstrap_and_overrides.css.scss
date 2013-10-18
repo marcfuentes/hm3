@@ -105,7 +105,7 @@ h5 {
   font-family: Lato;
   font-size: 1.2em;
   line-height: 1.7em;
-  
+  font-weight: normal;
 
   color: #666;
 
@@ -295,8 +295,26 @@ footer c {
 .social_buttons {
 
   margin-top: 1em;
+    width: 200px;
+    height: 100px;
 
+}
 
+div.map_container_renamed #map {
+  width: 355px;
+  height: 140px;
+}
+
+div.map_container_renamed {
+  padding: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc #ccc #999 #ccc;
+  -webkit-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+  -moz-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+  box-shadow: rgba(64, 64, 64, 0.1) 0 2px 5px;
+  width: 355px;
+  height: 140px
 }
 
 .pro_thumb  {

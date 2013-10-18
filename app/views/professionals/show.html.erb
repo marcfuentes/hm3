@@ -19,10 +19,10 @@
             </div>
 
             <div class="social_buttons span4 "> 
-              <div class="well well large">
               
-      </div> 
-    </div>    
+              <%= gmaps( :map_options => { :container_class => "map_container_renamed" }, "markers" => {"data" => @json, "options" => {"auto_zoom" => false} }) %>
+             
+          </div>    
            
        
           
@@ -68,7 +68,7 @@
                          <%= service.name %></p>
 
                           <% end %>
-                      </p>
+                      
                     </div>
                  </div>
         </div>

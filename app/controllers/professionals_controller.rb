@@ -32,6 +32,15 @@ class ProfessionalsController < ApplicationController
   # GET /professionals/1.json
   def show
     @professional = Professional.find(params[:id])
+    @json = Professional.find(params[:id]).to_gmaps4rails
+    @json = Professional.find(params[:id]).to_gmaps4rails  do |professional, marker|
+    marker.infowindow render_to_string(:partial => "/professionals/gmaps4rails_info_profile", :locals => { :professional => professional})
+    marker.picture({
+                  :picture => "/img/Clinica Tabancura.png",
+                  :width   => 30,
+                  :height  => 30,
+                 })
+   end 
 
     respond_to do |format|
       format.html # show.html.erb
