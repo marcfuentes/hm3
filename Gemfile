@@ -39,6 +39,8 @@ gem 'money-rails'
 #gem 'will_paginate', '~> 3.0'
 #gem 'will_paginate-bootstrap'
 gem "ransack"
+gem 'social-share-button'
+gem 'bootstrap-datepicker-rails'
 
 group :development do
   gem 'better_errors'

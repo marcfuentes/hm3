@@ -5,13 +5,13 @@
 <section id="search" class="search">
   <div class="row-fluid">
     <div class="span4 offset4">
-      <h6>Tratamientos</h6>
+     
       
       <div class="input-append">
 
       <%= search_form_for @q do |f| %>
 
-      <%= f.collection_select :services_id_eq, Service.order(:name), :id, :name %>
+      <%= f.collection_select :services_id_eq, Service.order(:name), :id, :name, :prompt => 'Elige un servicio' %>
        <%= f.submit "Buscar", class: "btn btn btn-inverse"  %>
       <% end %>
       </div>
@@ -24,7 +24,7 @@
 
 <section id='professional' >
     <% @professionals.each do |professional| %>
-    <div class="well well large">
+       <div class="well well large">
       <article class='row-fluid'>
           <div class="pro_thumb span4 offset2">
             <%= link_to (image_tag professional.picture_url(:thumb)), professional %>
