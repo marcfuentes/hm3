@@ -41,6 +41,7 @@ gem 'money-rails'
 gem "ransack"
 gem 'social-share-button'
 gem 'bootstrap-datepicker-rails'
+gem 'rails_12factor', group: :production
 
 group :development do
   gem 'better_errors'
