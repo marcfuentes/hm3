@@ -29,15 +29,15 @@
                     <table class="table table-hover ">  
                         <tbody>
                         <tr>
-                          <td><i class="icon-book"></i></td>
+                          <td><i class="icon-book icon-2x"></i></td>
                           <td><%= @professional.education %></td>
                         </tr> 
                         <tr>
-                          <td><i class="icon-hospital"></i></td>
+                          <td><i class="icon-hospital icon-2x"></i></td>
                           <td><%= @professional.clinic %></p></td>
                         </tr>
                         <tr>  
-                          <td><i class="icon-map-marker"></i></td>
+                          <td><i class="icon-map-marker icon-2x"></i></td>
                           <td><%= @professional.address %></p></td>
                         </tr>
                        </tbody>              
@@ -49,8 +49,8 @@
               <div class="services_pro span4 offset1 "> 
                   <div class="well well large">
                     <h4>Servicios</h4></br>
-                    <p><% @professional.services.each do |service| %>
-                        <%= service.name %></p>
+                    <p><% @professional.services.each do |service| %></p>
+                        <p><%= service.name %></p>
                         <% end %>                      
                   </div>
               </div>
