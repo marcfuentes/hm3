@@ -6,6 +6,8 @@ group :development, :test do
   gem 'sqlite3'
   gem 'carrierwave'
   gem 'mini_magick'
+  gem 'thin'
+  
 end
 
 group :production do
