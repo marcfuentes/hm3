@@ -1,124 +1,134 @@
-<section id="carousel" class="carousel">
- <!-- Main Area -->
-                <div id="main_area">
-                        <!-- Slider -->
-                        <div class="row">
-                                <div class="span12" id="slider">
-                                        <!-- Top part of the slider -->
-                                        <div class="row">
-                                                <div class="span8" id="carousel-bounding-box">
-                                                        <div id="myCarousel" class="carousel slide">
-                                                                <!-- Carousel items -->
-                                                                <div class="carousel-inner">
-                                                                        <div class="active item" data-slide-number="0"><img src="http://img.photobucket.com/albums/v234/marfue179/Screenshot-10162013-111648AM2_zps2336c2ea.png" /></div>
-                                                                        <div class="item" data-slide-number="1"><img src="http://img.photobucket.com/albums/v234/marfue179/Screenshot-10152013-111644AM22_zps38d55f49.png" /></div>
-                                                                        <div class="item" data-slide-number="2"><img src="http://img.photobucket.com/albums/v234/marfue179/Screenshot-10152013-011233PM11_zps11a1c70f.png" /></div>
-                                                                        
-                                                                       
-                                                                </div>
-                                                                <!-- Carousel nav -->
-                                                                <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
-                                                                <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
-                                                        </div>
-                                                </div>
-                                                <div class="span4" id="carousel-text"></div>
- 
-                                                <div style="display: none;" id="slide-content">
-                                                        <div id="slide-content-0">
-                                                                <h2></h2>
-                                                                <h1>Encuentra profesionales de la salud cercanos a ti.</h1>
-                                                                <p class="sub-text"><a href="#"></a></p>
-                                                        </div>
-                                                        <div id="slide-content-1">
-                                                                <h2></h2>
-                                                                <h1>El tratamiento que necesitas en la comuna que más te acomode.</h1>
-                                                                <p class="sub-text"><a href="#"></a></p>
-                                                        </div>
-                                                        <div id="slide-content-2">
-                                                                <h2></h2>
-                                                                <h1>Elige al profesional perfecto para tus necesidades.</h1>
-                                                                <p class="sub-text"><a href="#"</a></p>
-                                                        </div>
-                                                        
-                                                        
-                                                </div>
-                                        </div>
- 
-                                </div>
-                        </div> <!--/Slider-->
- 
-                        
-</div>
-<script>
-  jQuery(document).ready(function($) {
- 
-        $('#myCarousel').carousel({
-                interval: 5000
-        });
- 
-        $('#carousel-text').html($('#slide-content-0').html());
- 
-        //Handles the carousel thumbnails
-        $('[id^=carousel-selector-]').click( function(){
-                var id_selector = $(this).attr("id");
-                var id = id_selector.substr(id_selector.length -1);
-                var id = parseInt(id);
-                $('#myCarousel').carousel(id);
-        });
- 
- 
-        // When the carousel slides, auto update the text
-        $('#myCarousel').on('slid', function (e) {
-                var id = $('.item.active').data('slide-number');
-                $('#carousel-text').html($('#slide-content-'+id).html());
-        });
- 
- 
-});
-</script>
-  </section>
+<div class="intro-header">
 
-<section id="features" class="features">
-  <div class="container">
-    <div class="row-fluid">
-      <div class="span4 text-center">
-        <div class="feature">
-          <i class="icon-map-marker icon-2x pull-left"></i>
-          <h4>Busca a los profesionales más cercanos</h4>
-          <p>Sabemos que no tienes tiempo, busca los servicios más cercanos a ti en el mapa.</p>
+      <div class="container">
+  
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="transbox">
+              <div class="intro-message">
+                <h1>Health.Me</h1>
+                <h3>Encuentra a tu medico ahora</h3>
+              
+              
+                <%= link_to 'INSCRIBETE', new_user_registration_path, class: "btn btn-large btn-primary" %>
+                
+              </div> 
+            </div>        
+          </div>
         </div>
-      </div><!-- /span4 -->
+  
+      </div><!-- /.container -->
 
-      <div class="span4 text-center">
-        <div class="feature">
-          <i class="icon-group icon-2x pull-left"></i>
-          <h4>Conoce a los profesionales de la salud</h4>
-          <p>Sabemos que para ti lo más importante es saber con quien te atiendes, conocelos al detalle.</p>
+    </div><!-- /.intro-header -->
+
+
+ <div class="section">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="span4 text-center">
+            <h4><i class="icon-check"></i> ENCUENTRA UN DOCTOR</h4>
+            
+          </div>
+          <div class="span4 text-center">
+            <h4><i class="icon-check"></i> ASOMBRATE CON NUESTROS PRECIOS </h4>
+            
+          </div>
+          <div class="span4 text-center">
+            <h4><i class="icon-check"></i> HAZ LA CITA EN LINEA</h4>
+           
+          </div>
+        </div><!-- /.row -->
+
+      </div><!-- /.container -->
+
+    </div><!-- /.section -->
+
+
+
+    <div class="section-colored text-center">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="section-colored span12">
+            <h2>Un grupo de medicos de excelencia</h2>
+            <p>Conoce a nuestros medicos, te sorprenderán</p>
+            
+          </div>
+        </div><!-- /.row -->
+
+      </div><!-- /.container -->
+
+    </div><!-- /.section-colored -->
+
+
+    
+
+
+    
+    <!-- /Intro -->
+  
+    <!-- Services -->
+    <div id="services" class="services">
+      <div class="container">
+        <div class="row">
+          <div class="span4 offset4 text-center">
+            <h2>Los beneficios de Health.Me</h2>
+            <hr>
+          </div>
         </div>
-      </div><!-- /span4 -->
-      
-      <div class="span4 text-center">
-        <div class="feature">
-          <i class="icon-laptop icon-2x pull-left"></i>
-          <h4>Atiendete lo más pronto posible</h4>
-          <p>Agenda hora sanate ahora.</p>
+        <div class="row">
+          <div class="span4  text-center">
+            <div class="service-item">
+              <i class="service-icon icon-star"></i>
+              <h3>Medicos de calidad</h3>
+              <p>Los medicos que se presentan el Health.Me han sido elejidos bajo estricto rigor, basado en experiencia, precio y reseñas.</p>
+            </div>
+          </div>
+          <div class="span4 text-center">
+            <div class="service-item">
+              <i class="service-icon icon-money"></i>
+              <h3>Pagarás menos dinero</h3>
+              <p>Obten buenos precios por diversos y esperimentados medicos.</p>
+            </div>
+          </div>
+          <div class="span4 text-center">
+            <div class="service-item">
+              <i class="service-icon icon-cogs"></i>
+              <h3>Sin complicaciones</h3>
+              <p>Lo hacemos rapido y facil para que puedas encontrar y agendar la ayuda medica.</p>
+            </div>
+          </div>
+          
         </div>
-      </div><!-- /span4 -->
-    </div><!-- /row-fluid -->
-  </div><!-- /container -->
-</section>
+      </div>
+    </div>
+    <!-- /Services -->
 
+    <!-- Callout -->
+    <div class="callout">
+      <div class="vert-text">
+        <h2></h2>
+      </div>
+    </div>
+    <!-- /Callout -->
 
-<section id="joinbutton" class="joinbutton">
-<div class="row-fluid">
-  <div class="span4 offset4">
+ <!-- Call to Action -->
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="span6 offset3 text-center">
+            <h3>Comienza ya e inscríbete para encontrar a un medico confiable cerca tuyo.</h3>
+            <br>
+            <%= link_to 'INSCRIBETE', new_user_registration_path, class: "btn btn-large btn-primary" %> 
+            <%= link_to "BUSCA MEDICOS", "/professionals", class: "btn btn-large btn-primary" %>         
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Call to Action -->
      
-      
-         <h2><%= link_to "Inscríbete Ahora", new_user_registration_path, class: "btn btn-large btn-block btn-info" %></h2>
-        
-      
-     
-   </div>
-</div>
-</section>
 
+      

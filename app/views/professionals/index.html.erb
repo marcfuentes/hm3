@@ -21,10 +21,10 @@
 </section>
 
 
-
 <section id='professional' >
     <% @professionals.each do |professional| %>
-       <div class="well well large">
+    <div class="container">
+     <div class="well well large">
       <article class='row-fluid'>
           <div class="pro_thumb span4 offset2">
             <%= link_to (image_tag professional.picture_url(:thumb)), professional %>
@@ -33,16 +33,10 @@
             
             <h3> <%= link_to professional.name, professional, :class => "newcolor" %></h3>
             <ul>
-
                 <h4><%= professional.profession %> </h4>
-
                 <h5> <%= professional.clinic %></h5>
-
                 <h5> <%= professional.address %></h5>
-                
-
-               
-
+                              
                 <% if can? :update, @professional %>
                 <%= link_to 'Edit', edit_professional_path(professional), class: "btn btn-default" %>
                 <% end %>
@@ -55,6 +49,7 @@
 
       </article>
 
+     </div>
     <%end%>
     
     
@@ -63,7 +58,7 @@
     <%end%>
 </section>
         
-
+</div>
   
     
     

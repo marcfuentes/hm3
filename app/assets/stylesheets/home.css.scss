@@ -1,3 +1,271 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* Global Styles */
+
+
+.intro-header {
+        padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+        padding-bottom: 50px;
+        color: #444;
+        background: url(http://img.photobucket.com/albums/v234/marfue179/Screenshot-01222014-040059PM_zps882f964a.png) no-repeat center scroll;
+        background-size: cover;
+        text-align: center;
+}
+
+.intro-message {
+        position: relative;
+        padding-top: 20%;
+        padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+        margin: 0;
+        font-size: 5em;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+}
+
+.intro-message > h3 {
+  font-family: Noto Sans, sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+}
+
+.intro-divider {
+        width: 400px;
+        border-top: 1px solid #f8f8f8;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.intro-message > h3 {
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 767px) {
+        .intro-message {
+                padding-bottom: 15%;
+        }
+
+        .intro-message > h1 {
+                font-size: 3em;
+        }
+
+        ul.intro-social-buttons > li {
+                display: block;
+                margin-bottom: 20px;
+                padding: 0;
+        }
+
+        ul.intro-social-buttons > li:last-child {
+                margin-bottom: 0;
+        }
+
+        .intro-divider {
+                width: 100%;
+        }
+}
+.network-name {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 2px;
+}
+
+
+
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.vert-text h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+
+}
+
+.vert-text h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #ffffff;
+  
+}
+
+
+/* Section*/
+
+ 
+.section  {
+ 
+ background: #FFFFFF
+}
+
+.section h4 {
+
+  color: #444;
+  margin: 0;
+  font-size: 1.3em;
+  
+
+}
+
+.section i {
+
+  color: #666;
+  margin: 0;
+  font-size: 1.3em;  
+}
+
+
+/* Services */
+
+.services {
+  background:  #ffffff;
+
+}
+
+.service-item {
+  margin-bottom: 15px;
+}
+
+i.service-icon {
+  border: 3px solid #666;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle; 
+  text-align: center;
+}
+
+.services i {
+
+  color: #444;
+
+}
+
+.services h2 {
+
+color: #444;
+
+}
+
+.services h3 {
+
+color: #444;
+
+}
+
+.services p {
+
+color: #666;
+
+}
+
+/* Callout */
+
+
+.callout0 {
+  color: #FFFFFF;
+  display: table;
+  height: 400px;
+  width: 100%;
+  background: url(http://img.photobucket.com/albums/v234/marfue179/Screenshot-10162013-111648AM2_zps2336c2ea.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.callout {
+  color: #FFFFFF;
+  display: table;
+  height: 400px;
+  width: 100%;
+  background: url(http://img.photobucket.com/albums/v234/marfue179/Screenshot-10152013-011233PM11_zps11a1c70f.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+        
+  .intro-header {
+        background: url(http://img.photobucket.com/albums/v234/marfue179/Screenshot-01222014-040059PM_zps882f964a.png) no-repeat center center scroll; 
+  }
+
+  .callout {
+        background: url(http://img.photobucket.com/albums/v234/marfue179/Screenshot-10152013-011233PM11_zps11a1c70f.png) no-repeat center center scroll; 
+  }
+
+
+}
+
+
+/* Page Sections */
+.section,
+.section-colored {
+  padding: 50px 0;
+}
+
+.section-colored {
+  background: #86b4cc;
+}
+
+.section-colored > h2 {
+        margin: 0;
+        font-size: 3em;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+}
+
+.section-colored > p {
+        margin: 0;
+        font-size: 1.5em;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+}
+
+
+
+
+/* Call to Action */
+
+.call-to-action {
+  color: #ffffff;
+  background-color: #85ccc2;
+
+  padding: 50px 0;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+.call-to-action h3 {
+
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.4em;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  
+
+}
+
