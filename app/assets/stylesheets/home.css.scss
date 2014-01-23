@@ -63,13 +63,6 @@
                 width: 100%;
         }
 }
-.network-name {
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 400;
-        letter-spacing: 2px;
-}
-
 
 
 .vert-text {
@@ -101,30 +94,60 @@
  
 .section  {
  
- background: #FFFFFF
+ background: #86b4cc
 }
 
 .section h4 {
 
-  color: #444;
+  color: #ffffff;
   margin: 0;
   font-size: 1.3em;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
   
 
 }
 
 .section i {
 
-  color: #666;
+  color: #ffffff;
   margin: 0;
   font-size: 1.3em;  
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
+
+
+
+/* Page Sections */
+.section,
+.section-colored {
+  padding: 50px 0;
+}
+
+.section-colored {
+  background: #ffffff;
+}
+
+.section-colored > h2 {
+        margin: 0;
+        font-size: 3em;
+        
+        color: #666;
+}
+
+.section-colored > p {
+        margin: 0;
+        font-size: 1.5em;
+        
+        color: #888;
+}
+
+
 
 
 /* Services */
 
 .services {
-  background:  #ffffff;
+  background:  #85ccc2;
 
 }
 
@@ -133,7 +156,7 @@
 }
 
 i.service-icon {
-  border: 3px solid #666;
+  border: 3px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
   font-size: 56px;
@@ -142,29 +165,34 @@ i.service-icon {
   line-height: 136px;
   vertical-align: middle; 
   text-align: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .services i {
 
-  color: #444;
+  color: #ffffff;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 
 }
 
 .services h2 {
 
-color: #444;
+color: #ffffff;
+text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 
 }
 
 .services h3 {
 
-color: #444;
+color: #ffffff;
+text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 
 }
 
 .services p {
 
-color: #666;
+color: #ffffff;
+text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 
 }
 
@@ -197,60 +225,11 @@ color: #666;
 }
 
 
-
-
-
-
-
-
-/* Responsive */
-
-@media (max-width: 768px) {
-        
-  .intro-header {
-        background: url(http://img.photobucket.com/albums/v234/marfue179/Screenshot-01222014-040059PM_zps882f964a.png) no-repeat center center scroll; 
-  }
-
-  .callout {
-        background: url(http://img.photobucket.com/albums/v234/marfue179/Screenshot-10152013-011233PM11_zps11a1c70f.png) no-repeat center center scroll; 
-  }
-
-
-}
-
-
-/* Page Sections */
-.section,
-.section-colored {
-  padding: 50px 0;
-}
-
-.section-colored {
-  background: #86b4cc;
-}
-
-.section-colored > h2 {
-        margin: 0;
-        font-size: 3em;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-        color: #ffffff;
-}
-
-.section-colored > p {
-        margin: 0;
-        font-size: 1.5em;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-        color: #ffffff;
-}
-
-
-
-
 /* Call to Action */
 
 .call-to-action {
   color: #ffffff;
-  background-color: #85ccc2;
+  background-color: #86b4cc ;
 
   padding: 50px 0;
 }
@@ -268,4 +247,21 @@ color: #666;
   
 
 }
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+        
+  .intro-header {
+        background: url(http://img.photobucket.com/albums/v234/marfue179/Screenshot-01222014-040059PM_zps882f964a.png) no-repeat center center scroll; 
+  }
+
+  .callout {
+        background: url(http://img.photobucket.com/albums/v234/marfue179/Screenshot-10152013-011233PM11_zps11a1c70f.png) no-repeat center center scroll; 
+  }
+
+
+}
+
 
